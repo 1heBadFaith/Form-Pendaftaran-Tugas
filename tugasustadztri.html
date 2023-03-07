@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form Pendaftaran Acara MABAR</title>
+	
+</head>
+<body style="background: #4286FF">
+	
+	<div style="width: 40%; border: 3px #000; padding: 30px; margin: 50px auto; display: flex; background: #FFFFFF; border-radius: 30px">	
+		
+	  <form method="get" action="http://api.whatsapp.com/?text-" style="width: 100%">
+			<h1 style="text-align: center; font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'; font: bold; color: #4286FF">Input Data Peserta</h1>
+			
+			<b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'; font: bold;">Nama Peserta: </b> <br>
+			<input name="nama" type="text" required/>
+			<p> <b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'; font: bold;">Games:</b> <br>
+			  <select name="kelas">
+			    <option disabled="" selected="" style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';">Pilih Games Anda</option>
+			    <option style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';">Mobile Legends</option>
+			    <option style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';">CSGO</option>
+			    <option style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';">Kelas XII</option>
+		      </select>
+		  </p>
+			
+		  <label for="date"><b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';">Tanggal Lahir Peserta:</b></label>
+		  <br>
+			<input type="date" name="tanggal" id="tanggal"><p />
+			
+			<p/><b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'; font: bold;">Nomor ID Peserta: </b><br>
+			<input type="number" name="nomor" required>
+			
+			
+			<p/>
+			<b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'; font: bold;">Rank Peserta:</b><br>
+		  
+			<input type="radio" name="kategori">Mythical Glory 5000+ <br />
+			<input type="radio" name="kategori">Mythical Glory 1000+ <br />
+			<input type="radio" name="kategori">Rome Mythical <br />
+			
+			<p/><b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';">Kemampuan Peserta</b><br>
+		  <input type="checkbox" name="ekonomi">Mampu<br />
+		  <input type="checkbox" name="ekonomi">Tidak Mampu<br />
+		  <input type="checkbox" name="ekonomi">Mampu, Berkebutuhan Khusus<br />
+		  <input type="checkbox" name="ekonomi">Tidak Mampu, Berkebutuhan Khusus<br />
+			
+			<p /><b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';">Catatan: </b><br>
+		  <textarea name="catatan" style="height: 150px; width: 200px"></textarea><p />
+			
+		  
+		  <button type="submit" value="Kirim Pesan" style="border-radius: 17px; width: 100px; height: 30px; background: #4286FF; border-color: #fff"><b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'; color: #fff">Submit</b></button>
+		  <button type="reset" value="Hapus" style="border-radius: 17px; width: 100px; height: 30px; background: #4286FF; border-color: #fff" onClick="alert('Data telah di Reset')"><b style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'; color: #fff">Hapus</b></button>
+	  </form>
+		
+	</div>
+</body>
+</html>
